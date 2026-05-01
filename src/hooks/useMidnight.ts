@@ -9,7 +9,8 @@ export const useMidnight = () => {
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
     useEffect(() => {
-        const target = new Date(Date.now() + 10000);
+        // Final Target Date: May 16, 2026 at 11:00 AM
+        const target = new Date('2026-05-16T11:00:00+05:30');
 
         const checkTime = () => {
             const now = new Date();
